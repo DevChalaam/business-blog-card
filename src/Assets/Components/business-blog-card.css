@@ -1,0 +1,129 @@
+/* Import Fonts Form Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: #F2F5F9;
+}
+
+/* Main Container */
+div.main-container {
+    border: #FFFFFF 1px solid;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    margin-top: 124px;
+    width: 420px;
+    max-width: 420px;
+    height: auto;
+
+    /* Box Container */
+    & div.container-image {
+        position: relative;
+        display: inline-block;
+        border-radius: 10px;
+
+        /* Box Image */
+        & img.image-box {
+            display: block;
+            height: 280px;
+            border-radius: 10px;
+        }
+
+        & svg.svg-image {
+            position: absolute;
+            bottom: 0px;
+        }
+    }
+
+    /* Container Topic */
+    & div.container-topic {
+        display: block;
+        padding: 0 32px 0 32px;
+
+        /* Text Topic */
+        & h4.txt-perfect {
+            font-size: 24px;
+            font-style: normal;
+            font-optical-sizing: auto;
+            color: #111729;
+        }
+    }
+
+    /* Container Description */
+    & div.container-small {
+        margin-top: 12px;
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 24px;
+
+        /* Text Description */
+        & p.txt-small {
+            font-size: 16px;
+            color: #677489;
+        }
+    }
+
+    & hr.container-hr {
+        opacity: 0.5;
+    }
+
+    /* Image Account Container */
+    & div.container-account {
+        border: none;
+        height: 42px;
+        margin-top: 24px;
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 24px;
+
+        /* Box Container */
+        & div.container-image-account {
+            border: none;
+            width: 40px;
+            height: 40px;
+            float: left;
+            border-radius: 50%;
+            display: block;
+
+            /* Image Account */
+            & img.image-accounts {
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+
+        /* Name and Position Container */
+        & div.container-name-position {
+            border: none;
+            margin-left: 52px;
+            height: 40px;
+
+            /* Name Container */
+            & p.txt-amy {
+                padding-top: 1px;
+                font-size: 16px;
+                font-weight: bold;
+                color: #111729;
+            }
+
+            /* Position Container */
+            & p.txt-customer {
+                padding-top: 1px;
+                font-size: 12.5px;
+                color: #677489;
+                font-style: normal;
+            }
+        }
+    }
+}
